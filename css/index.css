@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto Mono', monospace;
+  background-color: #5276AD;
 }
 h1,
 h2,
@@ -164,6 +165,13 @@ img {
   height: auto;
 }
 .container {
+  max-width: 100%;
+  width: 99%;
+  margin: 0 auto;
+  background-color: #5276AD;
+  color: white;
+}
+.container2 {
   max-width: 100%;
   width: 99%;
   margin: 0 auto;
@@ -236,6 +244,113 @@ img {
 .main .last {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-image: url("img/trophy.jpg");
   border: red 0.5rem solid;
+  background-image: url(../img/hacker.jpg);
+  background-size: cover;
+}
+.main .last .list {
+  margin: 2.2rem;
+}
+.main .last .list ol {
+  list-style-type: decimal;
+}
+.main .last .list ol li {
+  margin: 2.6rem;
+  font-size: 2rem;
+}
+.main .contact {
+  width: 100%;
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+.main .contact h1 {
+  margin: 2rem;
+  font-size: 5rem;
+}
+.main .contact form {
+  margin: 1rem;
+}
+.main .contact form input {
+  margin: 1rem;
+}
+.header {
+  text-align: center;
+  margin-top: 4rem;
+}
+.main2 img {
+  max-width: 20rem;
+  max-height: 20rem;
+  border: 1.2rem solid black;
+}
+.main2 h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.main2 a {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: peru;
+}
+.main2 a:hover {
+  color: palevioletred;
+}
+.main2 .team1 {
+  text-align: center;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+.main2 .team2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+.main2 .team2 a {
+  padding-left: 8.4rem;
+}
+.main2 .team3 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+.main2 .team3 a {
+  padding-left: 8.4rem;
+}
+.main2 .team4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  padding-bottom: 5rem;
+}
+.main2 .team4 a {
+  padding-left: 8.4rem;
+}
+.contact {
+  width: 100%;
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+.contact h1 {
+  margin: 2rem;
+  font-size: 5rem;
+}
+.contact form {
+  margin: 1rem;
+}
+.contact form input {
+  margin: 1rem;
+}
+h3 {
+  padding: 2rem;
 }
