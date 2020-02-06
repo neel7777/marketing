@@ -166,7 +166,6 @@ img {
 }
 .container {
   max-width: 100%;
-  width: 99%;
   margin: 0 auto;
   background-color: #5276AD;
   color: white;
@@ -183,6 +182,28 @@ img {
   justify-content: space-between;
   text-decoration: none;
   border-bottom: solid 2px black;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .firstcont h1 {
+    font-size: 3rem;
+  }
+  .navbar .firstcont .img1 {
+    display: none;
+  }
+  .navbar .navbut {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbar .navbut a {
+    font-size: 2.3rem;
+    white-space: nowrap;
+    margin: 1rem;
+  }
 }
 .navbar .firstcont {
   display: flex;
@@ -215,48 +236,48 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  height: 60vh;
+  background-image: url(../img/community.jpg);
+}
+@media (max-width: 500px) {
+  .main {
+    background-image: none;
+  }
 }
 .main .about {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
-  width: 70%;
+  width: 100%;
 }
 .main .about p {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .main .about {
+    height: 100vh;
+    background-image: url(../img/salty.webp);
+  }
+  .main .about .img2 {
+    display: none;
+  }
+}
 .main .top {
   margin: 2rem;
-  background-color: goldenrod;
+  background-color: gold;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  max-height: 70rem;
 }
 .main .top h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
 .main .top .img3 {
-  margin: 3rem;
-}
-.main .last {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: red 0.5rem solid;
-  background-image: url(../img/hacker.jpg);
-  background-size: cover;
-}
-.main .last .list {
-  margin: 2.2rem;
-}
-.main .last .list ol {
-  list-style-type: decimal;
-}
-.main .last .list ol li {
-  margin: 2.6rem;
-  font-size: 2rem;
+  overflow: hidden;
+  max-width: 15rem;
+  max-height: 20rem;
+  margin: 2rem;
 }
 .main .contact {
   width: 100%;
@@ -273,6 +294,61 @@ img {
 }
 .main .contact form input {
   margin: 1rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: none;
+  }
+}
+.last {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  width: 90%;
+  border: red 0.5rem solid;
+  background-image: url(../img/hacker.jpg);
+  background-size: cover;
+}
+.last .list {
+  margin: 2.2rem;
+}
+.last .list ol {
+  text-align: center;
+  list-style-type: decimal;
+}
+.last .list ol li {
+  margin: 2.6rem;
+  font-size: 2rem;
+}
+.topsalt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+  border: gold 0.5rem solid;
+  text-align: center;
+  background-image: url(../img/matrix.jpg);
+  height: 71vh;
+}
+@media (max-width: 500px) {
+  .topsalt {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.topsalt img {
+  max-height: 20rem;
+}
+.topsalt h2 {
+  text-decoration: underline;
 }
 .header {
   text-align: center;
@@ -314,6 +390,21 @@ img {
 .main2 .team2 a {
   padding-left: 8.4rem;
 }
+@media (max-width: 500px) {
+  .main2 .team2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-left: 1.4rem;
+  }
+  .main2 .team2 a {
+    padding-left: 7.8rem;
+  }
+  .main2 .team2 .ppl {
+    padding-bottom: 2rem;
+  }
+}
 .main2 .team3 {
   display: flex;
   justify-content: space-around;
@@ -323,6 +414,21 @@ img {
 }
 .main2 .team3 a {
   padding-left: 8.4rem;
+}
+@media (max-width: 500px) {
+  .main2 .team3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-left: 1.4rem;
+  }
+  .main2 .team3 a {
+    padding-left: 7.8rem;
+  }
+  .main2 .team3 .ppl {
+    padding-bottom: 2rem;
+  }
 }
 .main2 .team4 {
   display: flex;
@@ -334,6 +440,21 @@ img {
 }
 .main2 .team4 a {
   padding-left: 8.4rem;
+}
+@media (max-width: 500px) {
+  .main2 .team4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-left: 1.4rem;
+  }
+  .main2 .team4 a {
+    padding-left: 7.8rem;
+  }
+  .main2 .team4 .ppl {
+    padding-bottom: 2rem;
+  }
 }
 .contact {
   width: 100%;
